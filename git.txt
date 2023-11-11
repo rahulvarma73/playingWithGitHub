@@ -1,0 +1,64 @@
+clone - Cloning a repository on our local machine
+git clone <-some link->
+
+status - Displays the status of the code
+git status
+
+
+When we use git status there are four status codes
+
+untracked - newfiles that git doesn't track
+modified - files that are modified
+staged - file is ready to be commited
+unmodified - unchanged
+
+Add & Commit
+
+add - adds new or modified files in your working directory to the git staging area
+git add <-file name-> // adds single file.
+git add .             // adds all the files that are new or modified.
+
+
+commit - it is the record of the change
+git commit -m "some message"
+
+
+push - upload from local repo to remote repo
+
+git push origin <-branch name->     
+// origin: the name of git repo by defualt 
+
+Branch Commands
+
+git branch - to check branch
+
+change name of the current branch you are in 
+git branch -M <-new branchname-> (rename branch)
+
+git checkout <-branchname->  (navigate)
+
+git checkout -b <-branchname-> (create branch)
+
+git branch -d <-branchname-> (delete branch)
+
+
+Merging Code
+
+way 1
+// you are in a particular branch and you want compare your code with other branch
+git diff <-branchname->   (to compare commits,branches,files&more)
+git merge <-branchname->
+
+
+way 2 
+
+create a PR(Pull Request)
+
+
+
+Pull command - used to fetch and download content from a remote repo and immediately update the local repo to match the content
+git pull origin main
+
+
+resolving merge conflicts
+an event that takes place when git is unable to automatically resolve difference in code between two commits
